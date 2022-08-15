@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlassEffect</title>
+</head>
+<style>
+    body{
+    background-image: url("https://t3.ftcdn.net/jpg/02/26/68/76/360_F_226687640_sml2400jDZS3wztQjfoVUEOnXBczpiPY.jpg");
+    background-size: cover;
+    background-attachment:fixed;
+    }
+    .container{
+        width:500px;
+        height:300px;
+        margin:200px auto;
+        text-align: center;
+        
+
+    }
+    .glass{
+       
+        background: linear-gradient(135deg,rgba(255, 255, 255, 0.1),rgba(255, 255, 255, 0));
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(20px);
+        border-radius: 32px;
+        border:1px solid rgba(255, 255, 255, 0.18);
+        box-shadow: 0 8px 32px rgba(0,0,0,0.37);
+       
+       
+
+    }
+   .container img{
+    margin-top: 30px;
+   }
+   .container h1::first-letter{
+    color:rgb(0, 186, 243);
+
+   }
+   .container h1{
+    color:rgb(254, 250, 5);
+    
+   }
+   
+</style>
+<body>
+    <div class="container glass">
+    <img src="Naveen logo.png" alt="" width="180px" height="180px">
+    <h1>Naveen paul</h1>
+    </div>
+</body>
+</html>

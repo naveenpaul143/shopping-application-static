@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CustomerDetails</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/db8ff86ff7.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="logo.png">
+   
+</head>
+<style>
+    .container2{
+ 
+    width:90%;
+    height:300px;
+    margin: auto;
+  padding:10px;    
+  border-radius:20px;
+    }
+    input[type=text],[type=password],[type=date],[type=email],[type=color],textarea,select{
+        width:100%;
+         margin:8px 0;
+        box-sizing:border-box;
+        padding:5px;
+        border-radius:6px;
+         outline:none;
+         font-size:15px;
+         border:2px solid #ccc;
+         font-family:verdana;
+      
+        
+    }
+    input[type=email],input[type=text]{
+   border-left-color: red;
+   border-left-width: 5px;
+}
+    input[type=submit]{
+        color:white;
+        font-weight:500;
+        background-color:#39e322;
+        outline:none;
+        border:0;
+        cursor:pointer;
+        padding:5px;
+        margin-left:20px;
+        width:70px;
+    }
+     input[type=reset]{
+        color:black;
+        font-weight:500;
+        background-color:white;
+        cursor:pointer;
+      border:1px solid #ccc;
+        padding:5px;
+        margin-left:20px;
+        width:70px;
+    }
+label{
+    color:black;
+    font-size:20px;
+    font-weight:bold;
+}
+    /*input[type=submit]{*/
+    /*    background:#20c6c6;*/
+    /*    color:white;*/
+    /*    border-radius:10px;*/
+    /*    width:100%;*/
+    /*    font-family:verdana;*/
+    /*    font-size:15px;*/
+    /*    margin:8px 0;*/
+    /*    padding:10px;*/
+        
+        
+    /*}*/
+    .container2 h2{
+        text-align:center;
+        
+    }
+    form{
+        width:100%;
+    }
+    .container2 .end{
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+        justify-content:end;
+        
+       
+    }
+    
+</style>
+<body>
+    <nav class="navbar">
+        <h1>
+            <img src="logo.png" alt="">
+            <span class="title1">Customer</span>
+            <span class="title2">Manager</span>
+        </h1>
+        <ul>
+            <li><a href="CustomerDetails.html" class="active">Customers</a></li>
+            <li><a href="OrderDetails.html">Orders</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Login.html">Login</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>
+            <span><i class="fa-solid fa-user-large"></i></span>
+            <span>Customers</span>
+           
+        </h1>
+        <ul>
+            <li><a href="CustomerDetailsCardLayout.html" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-fill one" viewBox="0 0 16 16">
+                <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z"/>
+              </svg>Card View</a></li>
+            <li><a href="CustomerDetailsListLayout.html"><i class="fa-solid fa-list two"></i>List View</a></li>
+            <li><a href="NewCustomerDetails.html"><i class="fa-solid fa-plus  three"></i>New Customer</a></li>
+             
+            
+
+        </ul>
+       
+    </div>
+    <div class="container2" action="GET">
+        <form>
+     
+            <label>First Name</label><br>
+            <input type="text" placeholder="Enter First Name" required><br>
+             <label>Last Name</label><br>
+            <input type="text" placeholder="Enter Last Name"required><br><br> 
+            <label>Email</label><br>
+            <input type="email" placeholder="Enter Email"required><br><br>
+             <label>Mobile</label><br>
+            <input type="text"  size="10"placeholder="Enter Mobile"required><br><br>
+            <input type="checkbox"required><b>Subscribe to get notification from EShopper?</b><br><br>
+             <label>DOB</label><br>
+            <input type="date"required><br><br>
+            <label>Favourate color</label><br>
+            <input type="color"required>
+            <label>Address</label><br>
+             <textarea rows="4" placeholder="Enter Address"required></textarea>
+             </textarea><br>
+             <label>City</label>
+             <select placeholder="Select city"required>
+                <option disabled hidden selected>Select city</option>
+                <option>Eluru</option>
+                <option>vijayawada</option>
+                <option>ongole</option>
+                <option>Nellore</option>
+                <option>vizag</option>
+                 <option>Bangalore</option>
+                <option>Hyderabad</option>
+                <option>Delhi</option>
+                 <option>Mumbai</option>
+                <option>Pune</option>
+                <option>Chennai</option>
+                 <option>Tamilnadu</option>
+                <option>Gurugram</option>
+                <option>Chandighar</option>
+             </select>
+             <br>
+              <label>State </label>
+             <select placeholder="City"required>
+                <option disabled hidden selected>Select state</option>
+                <option>Andhra pradesh</option>
+                <option>Telangana</option>
+                <option>Maharastra</option>
+                <option>Uttar pradesh</option>
+                <option>Tamil Nadu</option>
+                 <option>Bihar</option>
+                <option>Arunachal pradesh</option>
+                <option>Assam</option>
+                 <option>Himachal Pradesh</option>
+                <option>Odisha</option>
+                <option>Kerala</option>
+                 <option>Nagaland</option>
+                <option>Tripura</option>
+                <option>Andaman and Nicobar</option>
+             </select><br>
+             <label>Country</label>
+              <select placeholder="Country" required>
+                <option disabled hidden selected>Select Country</option>
+                <option>India</option>
+                <option>America</option>
+                <option>Austraila</option>
+                <option>China</option>
+                <option>Russia</option>
+                 <option>Uk</option>
+                <option>London</option>
+                <option>Pakistan</option>
+                 <option>Nepal</option>
+                <option>Bangladesh</option>
+                <option>Japan</option>
+                 <option>Malaysia</option>
+                <option>Afghanistan</option>
+                <option>saudi Arabia</option>
+             </select>
+    
+          <div class="end">
+        <input type="reset" value="Cancel"> 
+        <input type="submit" value="Insert">          
+          </div>
+              </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CustomerDetails</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/db8ff86ff7.js" crossorigin="anonymous"></script>
+   
+</head>
+<body>
+    <nav class="navbar">
+        <h1>
+            <img src="logo.png" alt="">
+            <span class="title1">Customer</span>
+            <span class="title2">Manager</span>
+        </h1>
+        <ul>
+            <li><a href="CustomerDetails.html" class="active">Customers</a></li>
+            <li><a href="OrderDetails.html">Orders</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Login.html">Login</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>
+            <span><i class="fa-solid fa-user-large"></i></span>
+            <span>Customers</span>
+           
+        </h1>
+        <ul>
+            <li><a href="CustomerDetailsCardLayout.html" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-fill one" viewBox="0 0 16 16">
+                <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z"/>
+              </svg>Card View</a></li>
+            <li><a href="CustomerDetailsListLayout.html"><i class="fa-solid fa-list two"></i>List View</a></li>
+            <li><a href="NewCustomerDetails.html"><i class="fa-solid fa-plus  three"></i>New Customer</a></li>
+             
+             <p id="filter">Filter:
+             <input type="text" placeholder="Search Text">
+             </p>
+
+        </ul>
+       
+    </div>
+
+    <div class="table">
+        <table id="customers">
+           <tr>
+            <th></th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Order Total</th>
+            <th></th>
+        </tr> 
+        <tr>
+            <td><img src="male.jpg" alt="" width="40px"></td>
+            <td>Ted</td>
+            <td>James</td>
+            <td>1234 Anywhere st.</td>
+            <td>Phonenix</td>
+            <td>Arizona</td>
+            <td>$207.8</td>
+            <td><a href="OrderDetails.html">view orders</a></td>
+
+        </tr>
+        <tr>
+            <td><img src="male.jpg" alt="" width="40px"></td>
+            <td>Zed</td>
+            <td>Bishop</td>
+            <td>345 cedar point Ave.</td>
+            <td>Encinitas</td>
+            <td>california</td>
+            <td>$8.98</td>
+            <td><a href="OrderDetails.html">view orders</a></td>
+
+        </tr>
+        <tr>
+            <td><img src="male.jpg" alt="" width="40px"></td>
+            <td>Michelle</td>
+            <td>Thompson</td>
+            <td>1822 long bay dr</td>
+            <td>seattle</td>
+            <td>Washington</td>
+            <td>$229.97</td>
+            <td><a href="OrderDetails.html">view orders</a></td>
+
+        </tr>
+        </table>
+        
+      
+       
+        
+    
+    </body>
+    </html>

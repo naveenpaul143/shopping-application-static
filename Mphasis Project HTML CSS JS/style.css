@@ -1,0 +1,438 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+ @media(max-width:768px){
+   .navbar{
+    display: flex;
+    flex-direction: column;
+
+   
+   
+    
+   }
+   .navbar ul{
+      display: flex;
+       flex-direction: column;
+    
+
+   }
+   .navbar ul li a{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+      
+   }
+   .navbar ul li a:hover{
+    background:black;
+    color:white;
+    border-radius: 8px;
+   }
+  
+
+
+   }
+
+  
+
+
+        
+         
+
+
+   
+
+   
+
+
+.navbar{
+    display: flex;
+    background-color: #424ef5;
+    color: white;
+    padding: 10px;
+    align-items: center;
+    /* justify-content:space-around; */
+    font-family:'Times New Roman', Times, serif;
+    
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    margin-left: 20px;
+ 
+    
+}
+.navbar ul li{
+    list-style: none;
+    text-decoration: none;
+    
+    
+}
+.navbar ul{
+    display: flex;
+    
+    
+}
+.navbar h1{
+    font-size:30px;
+    font-weight: 500;
+    font-family:'Times New Roman', Times, serif;
+}
+.navbar a.active{
+    background-color: white;
+    border-radius: 6px;
+    padding: 6px;
+    color:rgb(175, 105, 105);
+}
+.navbar img{
+    width: 45px;
+    height: 45px;
+    margin-left: 20px;
+}
+.navbar h1{
+    display: flex;
+    align-items: center;
+    
+    
+}
+.title2{
+    margin-left: 9px;
+
+}
+/* customer details */
+.container h1{
+    margin-top: 25px;
+    margin-left: 30px;
+    font-weight: 300;
+}
+.container ul{
+    display: flex;
+    
+
+}
+.container ul li{
+    list-style-type:none;
+    padding: 30px;
+    
+}
+.container ul li a{
+    text-decoration: none;
+    color:black;
+    font-size:20px;
+    font-weight: 540;
+
+   
+}
+.container ul li #cd{
+    margin-right:10px;
+}
+.container ul li a .two,.three{
+    color:black;
+    margin-right: 4px;
+}
+.container ul li a .one{
+    color:black;
+    margin-right: 5px;
+   
+}
+
+.container  #filter{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    position: absolute;
+    right:150px;
+}
+@media(max-width:786px){
+    .container  #filter{
+       
+        display: sticky;
+        top:250px;
+        right:5px;
+      
+      
+    }
+}
+/* ----------------card container------------------ */
+.card-container{
+   /* background-color: gray;
+    height: 900px;
+    padding: 10px; */
+   float: left;
+   padding: 50px;
+   width: 100%;
+   
+    
+    
+}
+.card-container .card{
+    width: 18%;
+    margin:20px;
+    display: inline-block;
+    background-color: white;
+    height: 150px;
+    margin-left:40px;
+    border:3px solid rgb(249, 238, 238);
+    box-shadow: 2px 2px 10px  rgba(255, 255, 255, 0.998);
+  
+}
+@media(max-width:768px){
+    .card-container{
+        /* background-color: gray;
+         height: 900px;
+         padding: 10px; */
+        display:flex;
+        flex-wrap: wrap;
+        padding: 20px;
+      
+       
+        
+         
+         
+     }.card-container .card{
+        width: 270px;
+       
+        padding:10px;
+        
+        background-color: white;
+        height: 150px;
+        margin-left:40px;
+        border:3px solid rgb(249, 238, 238);
+        box-shadow: 2px 2px 10px  rgba(255, 255, 255, 0.998);
+      
+    }
+
+}
+.card-container .card .head{
+    background-color: #424ef5;
+    color:white;
+    font-weight: 400;
+    height: 40px;
+    /* position:relative; */
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+       
+    
+}
+.card-container .card .head h2{
+    margin-left: 10px;
+}
+.card-container .card .head #h22{
+    right: -89px;
+    position: relative;
+
+    
+}
+/* .card-container .card #png{
+    color:white;
+    font-size: 90px;
+
+} */
+.card-container .card  .details{
+    display: flex;
+    align-items: center;
+    
+}
+.card-container .card  .details img{
+    width: 85px;
+    height: 84px;
+    padding: 10px;
+    
+}
+.card-container .card  .details .para{
+    display: flex;
+    flex-direction: column;
+    margin-left:20px;
+    
+    
+}
+.card-container .card  .details .para #p3{
+    color:blue;
+    font-size: 17px;
+    margin-top:4px;
+}
+/* ---------------card list type---------- */
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+    padding-top: 10px;
+    margin-right:30px;
+    margin-left:20px;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: white;
+    color: rgb(0, 0, 0);
+  }
+  .table{
+    padding:20px;
+    margin-top: 30px;
+  }
+  /* ==============step-5=============== */
+  .getDetails{
+    display: flex;
+    flex-direction: row;
+   
+    width:400px;
+    padding: 10px;
+    margin-left: 35px;
+  }
+  .person img{
+    width: 120px;
+    height: 130px;
+ 
+  }
+  .person{
+    display: flex;
+    padding: 10px;
+
+  }
+  .person .des{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    margin-bottom: 30px;
+  
+  }
+  .person .des h2{
+    font-weight: 300;
+    margin-bottom: 20px;
+  
+
+  }
+  .last{
+    color:blue;
+    font-size: 20px;
+    margin-left: 40px;
+    margin-top:40px;
+  }
+/* ==============step 7=================== */
+.head1{
+  
+    height:150px;
+    padding:30px;
+
+}
+.head1 #head1{
+    font-size: 30px;
+    
+}
+.head1 .list{
+    display: flex;
+    justify-content: space-between;
+    margin-top:10px;
+}
+.lastdollor{
+    height: 100px;
+    display: flex;
+   padding: 10px;
+   align-items: flex-start;
+   text-align: center;
+   justify-content: end;
+
+
+}
+/* ---------------- */
+.head2{
+  
+    height:150px;
+  
+
+}
+.head2 #head2{
+    font-size: 30px;
+    
+    
+}
+
+.head2 .list2{
+    display: flex;
+    justify-content: space-between;
+    margin-top:10px;
+}
+.lastdollor2{
+    height: 100px;
+    display: flex;
+   padding: 10px;
+   align-items: flex-start;
+   text-align: center;
+   justify-content: end;
+
+
+}
+/* -----------login page------------- */
+.logincontainer{
+    /* background-color: antiquewhite; */
+    height: 350px;
+    padding: 20px;
+    margin-left:20px;
+}
+table{
+    font-family: arial;
+    border-collapse: collapse;
+   
+}
+ td{
+    padding:10px;
+    margin-top:10px;
+   
+
+ }
+td #name{
+    color:blue;
+}
+td a{
+    list-style-type: none;
+    text-decoration: none;
+    color:blue;
+}
+/* ============login============ */
+.login{
+   
+    padding: 10px;
+    margin-left: 20px;
+   
+    
+
+}
+input{
+    border-radius: 4px;
+}
+input[type=submit]{
+    background-color: rgb(5, 229, 65);
+    color:white;
+    outline: none;
+    border:none;
+    padding:5px;
+    margin-left: 10px;
+    width: 70px;
+    margin-top:10px;
+    border-radius: 3px;
+}
+input[type=submit]:hover{
+    cursor: pointer;
+}
+input[type=email],[type=password]{
+   border-left-color: red;
+   border-left-width: 5px;
+}
